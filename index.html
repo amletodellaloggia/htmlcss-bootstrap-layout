@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Bootstrap Grid Layout</title>
 </head>
+
 <body>
 	<!-- header -->
 	<header>
@@ -22,48 +25,54 @@
 		</div>
 	</header>
 	<!-- main -->
-	 <main>
+	<main>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-4 bg-light">
 					<div class="box p-4">
 						<h2> Colonna 1</h2>
-						<p>Larghezza intera su dipositivi piccoli, metà larghezza su dispositivi medi e un terzo su dispositivi grandi.</p>
+						<p>Larghezza intera su dipositivi piccoli, metà larghezza su dispositivi medi e un terzo su
+							dispositivi grandi.</p>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-8 bg-secondary text-white">
 					<div class="box p-4">
 						<h2> Colonna 2</h2>
-						<p>Larghezza intera su dipositivi piccoli, metà larghezza su dispositivi medi e un terzo su dispositivi grandi.</p>
+						<p>Larghezza intera su dipositivi piccoli, metà larghezza su dispositivi medi e un terzo su
+							dispositivi grandi.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<br>
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-4 bg-primary text-white">
+			<div class="row text-white"> <!-- CENTRALIZZATO TEXT-WHITE -->
+				<div class="col-sm-6 col-md-4 bg-primary">
 					<div class="box p-4">
 						<h2> Colonna 1</h2>
 						<p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 bg-success text-white">
+				<div class="col-sm-6 col-md-4 bg-success">
 					<div class="box p-4">
 						<h2> Colonna 2</h2>
 						<p>Metà larghezza su dispositivi piccoli e un terzo su dispositivi medi e più grandi.</p>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-4 bg-danger text-white">
+				<div class="col-sm-12 col-md-4 bg-danger">
 					<div class="box p-4">
 						<h2> Colonna 3</h2>
-						<p>Larghezza intera su dispositivi piccoli (col-12) e un terzo su dispositivi medi e più grandi.</p>
+						<p>Larghezza intera su dispositivi piccoli (col-12) e un terzo su dispositivi medi e più grandi.
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<br>
-		<div class="container">
+
+		<!-- NON CENTRALIZZATO -->
+
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-md-3 bg-info text-white">
 					<div class="box p-4">
@@ -90,7 +99,39 @@
 					</div>
 				</div>
 			</div>
+		</div> -->
+
+		<!-- CENTRALIZZATO ROW ROW-COLS -->
+
+		<div class="container">
+			<div class="row row-cols-sm-2 row-cols-md-4">
+				<div class="col bg-info text-white">
+					<div class="box p-4">
+						<h2>Colonna 1</h2>
+						<p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+					</div>
+				</div>
+				<div class="col bg-warning text-white">
+					<div class="box p-4">
+						<h2>Colonna 2</h2>
+						<p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+					</div>
+				</div>
+				<div class="col bg-dark text-white">
+					<div class="box p-4">
+						<h2>Colonna 3</h2>
+						<p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+					</div>
+				</div>
+				<div class="col bg-light">
+					<div class="box p-4">
+						<h2>Colonna 4</h2>
+						<p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	 </main>
+	</main>
 </body>
+
 </html>
